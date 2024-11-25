@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="tgatpat.html">TGAT&TPAT3</a></li>
+      <li><a href="alevel.html">A-LEVEL</a></li>
+      <li><a href="engtest.html">EngTest</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    <ul>
+      <li><a href="#" ><img src="IMG_7399 (2).JPG" width="69px"> LAN-AKSORN</a></li>
+      <li class="hideOnMobile"><a href="#">HOME</a></li>
+      <li class="hideOnMobile"><a href="#">TGAT&TPAT</a></li>
+      <li class="hideOnMobile"><a href="#">A-LEVEL</a></li>
+      <li class="hideOnMobile"><a href="#">EngTest</a></li>
+      <li class="hideOnMobile"><a href="#"></a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+<section class="home">
+  <div class="home-img">
+      <img src=" " alt="">
+  </div>
+  <div class="home-content">
+      <h1>ยินดีต้อนรับสู่<span>ลานอักษร</span></h1>
+      <h2 class="typing-text">คุณต้องได้เป็น DEK68!<span></span></h2>
+     
+    
+  </div>
+</section>
+
+
+  <main>
+      <div class="slider" style="
+          --width: 100px;
+          --height: 50px;
+          --quantity: 10;
+      ">
+          <div class="list">
+              <div class="item" style="--position: 1"><img src="IMG_7239.JPG" alt=""></div>
+              <div class="item" style="--position: 2"><img src="IMG_7240.JPG" alt=""></div>
+              <div class="item" style="--position: 3"><img src="IMG_7241.JPG" alt=""></div>
+              <div class="item" style="--position: 4"><img src="IMG_7242.JPG" alt=""></div>
+              <div class="item" style="--position: 5"><img src="IMG_7243.JPG" alt=""></div>
+              <div class="item" style="--position: 6"><img src="IMG_7244.JPG" alt=""></div>
+              <div class="item" style="--position: 7"><img src="IMG_7245.JPG" alt=""></div>
+              <div class="item" style="--position: 8"><img src="IMG_7246.JPG" alt=""></div>
+              <div class="item" style="--position: 9"><img src="IMG_7247.JPG" alt=""></div>
+              <div class="item" style="--position: 10"><img src="IMG_7399 (2).JPG" alt=""></div>
+          </div>
+      </div>
+
+      <div class="slider" reverse="true" style="
+          --width: 200px;
+          --height: 200px;
+          --quantity: 9;
+      ">
+           <div class="list">
+            <div class="item" style="--position: 1"><img src="IMG_7239.JPG" alt=""></div>
+            <div class="item" style="--position: 2"><img src="IMG_7240.JPG" alt=""></div>
+            <div class="item" style="--position: 3"><img src="IMG_7241.JPG" alt=""></div>
+            <div class="item" style="--position: 4"><img src="IMG_7242.JPG" alt=""></div>
+            <div class="item" style="--position: 5"><img src="IMG_7243.JPG" alt=""></div>
+            <div class="item" style="--position: 6"><img src="IMG_7244.JPG" alt=""></div>
+            <div class="item" style="--position: 7"><img src="IMG_7245.JPG" alt=""></div>
+            <div class="item" style="--position: 8"><img src="IMG_7246.JPG" alt=""></div>
+            <div class="item" style="--position: 9"><img src="IMG_7247.JPG" alt=""></div>
+            <div class="item" style="--position: 10"><img src="IMG_7399 (2).JPG" alt=""></div>
+        </div>
+      </div>
+   </main>
+
+
+
+
+</body>
+</html>
